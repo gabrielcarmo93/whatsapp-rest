@@ -1,0 +1,26 @@
+{
+  "name": "wpp",
+  "version": "1.0.0",
+  "description": "A whatsapp message sender API",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "dev": "nodemon ./src/app.ts",
+    "start": "yarn build && node build/app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "libphonenumber-js": "^1.9.49",
+    "venom-bot": "^4.0.6"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.21",
+    "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  }
+}
